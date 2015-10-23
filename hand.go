@@ -32,7 +32,7 @@ func suitless(a, b string) bool {
 	mapping[CLUBS] = 1
 	mapping[DIAMONDS] = 2
 	mapping[HEARTS] = 3
-	return (mapping[a] - mapping[b]) < 0
+	return mapping[a] < mapping[b]
 }
 
 func (h Hand) Len() int {
